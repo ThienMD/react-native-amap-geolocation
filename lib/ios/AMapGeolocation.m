@@ -112,10 +112,6 @@ RCT_EXPORT_METHOD(setLocationTimeout : (int)value) {
                      }];
 }
 
-- (void)amapLocationManager:(AMapLocationManager *)manager doRequireLocationAuth:(CLLocationManager *)locationManager{
-  [locationManager requestAlwaysAuthorization];
-}
-
 - (NSArray<NSString *> *)supportedEvents {
   return @[ @"AMapGeolocation" ];
 }
